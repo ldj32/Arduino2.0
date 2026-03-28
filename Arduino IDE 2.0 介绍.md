@@ -130,7 +130,13 @@ File（文件） → Preferences（首选项）
 ##### 2.5.2离线库下载
 注：以笔者编写的库举例，有能力的读者可以去[Arduino - Home](https://www.arduino.cc/) 或者[GitHub](https://github.com/) 中寻找你需要的库
 
-[office](ujhJWg6SrRiAoBcmbZkaVa1LuEp2ughYTthD6ZOSeL4.zip)
+📥 **下载 em_led 库压缩包**：[点击下载 em_led.zip](em_led.zip) (828 KB)
+
+在文件夹中找到 em\_led.zip
+
+![image](images/3pSD0SmOeD_8ABGSPBrozvrFZEFANcW-FP8ZSO6osEo.png)
+
+
 
 * 解压并安装
 * 将下载的库文件安装进Arduino中
