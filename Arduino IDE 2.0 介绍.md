@@ -55,7 +55,7 @@ File（文件） → Preferences（首选项）
 
 在输入框里输入：zh-CN
 
-\-全小写即可，不要加引号
+全小写即可，不要加引号
 
 * 保存并重启 IDE
 
@@ -70,7 +70,7 @@ File（文件） → Preferences（首选项）
 
 *   搜索并安装开发板支持包
 
-   常见开发板搜索关键词：
+  常见开发板搜索关键词：
 
   Arduino AVR Boards：搜索"avr"，安装"Arduino AVR Boards"
 
@@ -87,7 +87,7 @@ File（文件） → Preferences（首选项）
 
 计算机 ←→ USB连接 ←→ 端口(COM/tty) ←→ Arduino开发板
 
-##### **2.4.1Windows系统配置端口**
+##### 2.4.1Windows系统配置端口
  通过设备管理器查找端口
 
 *  打开设备管理器
@@ -110,16 +110,14 @@ File（文件） → Preferences（首选项）
 * 记住COM口号，在Arduino IDE中选择
 
 ![image](images/xc-cib6Zpx2-3L7_bWpQLc2n2M10V517d-B6PFBAqb4.png)
-
-* 
-##### **2.4.2Arduino IDE上配置端口**
+##### 2.4.2Arduino IDE上配置端口
   找到我们开发板上的端口后，我们重新回到Arduino IDE中，在工具中选择你的端口即可
 
 ![image](images/55EtoQVaf_RdKyda-vR_vDYSNT1YoB3Z723fYVZ9DNs.png)
 
 
-##### [2.5 如何安装扩展库（以 Windows 为例）](https://docs.emakefun.com/#/zh-cn/software/arduino_ide/arduino_ide.zh-CN?id=_23-%e5%a6%82%e4%bd%95%e5%ae%89%e8%a3%85%e8%bd%af%e4%bb%b6%e5%ba%93%ef%bc%88windows%e4%b8%ba%e4%be%8b%ef%bc%89)
-##### **2.5.1使用 Arduino IDE 自带的库管理器下载安装库文件。(在线库)**
+### [2.5 如何安装扩展库（以 Windows 为例）](https://docs.emakefun.com/#/zh-cn/software/arduino_ide/arduino_ide.zh-CN?id=_23-%e5%a6%82%e4%bd%95%e5%ae%89%e8%a3%85%e8%bd%af%e4%bb%b6%e5%ba%93%ef%bc%88windows%e4%b8%ba%e4%be%8b%ef%bc%89)
+##### 2.5.1使用 Arduino IDE 自带的库管理器下载安装库文件。(在线库)
 * 打开 Arduino IDE 软件，在上方菜单栏点击“工具”。
 * 在“工具”菜单中，点击“管理库”，打开“库管理器”。
 * 在搜索框中输入库名称，或浏览找到需要的库。
@@ -129,20 +127,17 @@ File（文件） → Preferences（首选项）
 
 
 
-##### **2.5.2离线库下载**
+##### 2.5.2离线库下载
 注：以笔者编写的库举例，有能力的读者可以去[Arduino - Home](https://www.arduino.cc/) 或者[GitHub](https://github.com/) 中寻找你需要的库
 
-* 进入页面 [ldj32/em](https://github.com/ldj32/em)
-* 点击code，点击download zip
+[office](ujhJWg6SrRiAoBcmbZkaVa1LuEp2ughYTthD6ZOSeL4.zip)
+
 * 解压并安装
 * 将下载的库文件安装进Arduino中
 
-![image](images/e9wCqTLuxlx_BRsGeucpsdafBl2DT-yfb0GXSX2MJb4.png)
+可以通过“导入库>添加一个.ZIP库”方式直接将压缩文件加入。
 
-* 
-\-可以通过“导入库>添加一个.ZIP库”方式直接将压缩文件加入。
-
-\-也可以将下载的压缩包文件解压，然后将解压出来的名为的文件夹移至 “C:\\用户名\\Documents\\Arduino\\Libraries”\\”里， 并重命名为你想取的名字。
+也可以将下载的压缩包文件解压，然后将解压出来的名为的文件夹移至 “C:\\用户名\\Documents\\Arduino\\Libraries”\\”里。
 
 * 验证：重启IDE并测试
 
@@ -153,7 +148,7 @@ File（文件） → Preferences（首选项）
 
 ## [三、示例程序怎么使用](https://docs.emakefun.com/#/zh-cn/software/arduino_ide/arduino_ide.zh-CN?id=%e4%b8%89%e3%80%81%e7%a4%ba%e4%be%8b%e7%a8%8b%e5%ba%8f%e6%80%8e%e4%b9%88%e4%bd%bf%e7%94%a8)
 ### [3.1 如何打开编译日志](https://docs.emakefun.com/#/zh-cn/software/arduino_ide/arduino_ide.zh-CN?id=_61-%e5%a6%82%e4%bd%95%e6%89%93%e5%bc%80%e7%bc%96%e8%af%91%e6%97%a5%e5%bf%97)
-  在我们正式开发之前，需要打开编译日志，这样当我们程序出现错误，或者端口没接好，我们可以通过查看编译日志去排查我们的错误，具体操作如下：
+在我们正式开发之前，需要打开编译日志，这样当我们程序出现错误，或者端口没接好，我们可以通过查看编译日志去排查我们的错误，具体操作如下：
 
 打开 **文件 → 首选项** ,勾选这俩个选项
 
@@ -189,17 +184,14 @@ File（文件） → Preferences（首选项）
 * 流控制 (Flow Control)：流控制用于控制数据传输的速率，常见的选项包括无流控制、硬件流控制 (RTS/CTS) 和软件流控制 (XON/XOFF)。
 
 ### [4.3 串口监视器](https://docs.emakefun.com/#/zh-cn/software/arduino_ide/arduino_ide.zh-CN?id=_41-%e5%90%84%e4%b8%aa%e5%8f%82%e6%95%b0%e5%90%ab%e4%b9%89)
-使用串口监视器，你只需要用USB线将Arduino连接到电脑
-
-然后打开** Arduino IDE → 工具 → 串口监视器**（或者快捷键 `Ctrl+Shift+M` ）
+使用串口监视器，你需要用USB线将Arduino连接到电脑，然后打开** Arduino IDE → 工具 → 串口监视器**（或者快捷键 `Ctrl+Shift+M` ）
 
 ![image](images/Y8miXFRQXuN7RkMLOuG-oHGeL6KpbNCU7ze7AtUUlUo.png)
 
 
 
 ### [4.4 串口绘图仪](https://docs.emakefun.com/#/zh-cn/software/arduino_ide/arduino_ide.zh-CN?id=_42-%e4%b8%b2%e5%8f%a3%e7%bb%98%e5%9b%be%e4%bb%aa)
-跟串口监视器一样，将Arduino与电脑连接起来
-然后点击IDE菜单 **工具 → 串口绘图仪**。
+跟串口监视器一样，将Arduino与电脑连接起来，然后点击IDE菜单 **工具 → 串口绘图仪**。
 
 ![image](images/REq4VQWK9fsSOHmmuaAhcw1IH2aXzTyAfcVYi7gqoZ4.png)
 
@@ -218,7 +210,7 @@ File（文件） → Preferences（首选项）
 接下来我们逐一进行分析
 
 ### [5.1 库文件路径](https://docs.emakefun.com/#/zh-cn/software/arduino_ide/arduino_ide.zh-CN?id=_51-%e4%bf%ae%e6%94%b9%e5%ba%93%e6%96%87%e4%bb%b6%e8%b7%af%e5%be%84)
-  默认情况下，ArduinoIDE库文件软件包的位置默认在“C:\\Users\\用户名\\Documents\\Arduino”（路径可能会因系统设置而异）。如果你想对其中的库进行修改，不想将其存放在C盘中，你可以进行下面的操作。
+默认情况下，ArduinoIDE库文件软件包的位置默认在“C:\\Users\\用户名\\Documents\\Arduino”（路径可能会因系统设置而异）。如果你想对其中的库进行修改，不想将其存放在C盘中，你可以进行下面的操作。
 
 * 点开**文件 → 首选项 **
 * 修改项目文件夹地址，选择你想要存放的位置
@@ -232,9 +224,7 @@ File（文件） → Preferences（首选项）
 
 
 ### [5.2 Arduino开发板路径](https://docs.emakefun.com/#/zh-cn/software/arduino_ide/arduino_ide.zh-CN?id=_52-arduino%e5%bc%80%e5%8f%91%e6%9d%bf%e8%b7%af%e5%be%84)
-  在 Arduino IDE 2.0 中，在线安装的板卡（boards）存储路径会默认配置到 C:\\Users\\你的用户名\\AppData\\Local\\Arduino15\\packages\\（路径可能会因系统设置而异）
-
-或者我们可以通过编译代码，查看Arduino开发板路径，打开路径，就可以找到我们的开发板路径
+在线安装的板卡（boards）存储路径会默认配置到C:\\Users\\你的用户名\\AppData\\Local\\Arduino15\\packages\\ （路径可能会因系统设置而异）或者我们可以通过编译代码，查看Arduino开发板路径。
 
 ![image](images/eRwP2KXnfWStho7Axvu4p0ElY8Bvp1gP9wX6YScY5kw.png)
 
@@ -259,7 +249,7 @@ File（文件） → Preferences（首选项）
 
 
 ### [5.3 编译生成的文件路径](https://docs.emakefun.com/#/zh-cn/software/arduino_ide/arduino_ide.zh-CN?id=_53-%e7%bc%96%e8%af%91%e7%94%9f%e6%88%90%e7%9a%84%e6%96%87%e4%bb%b6%e8%b7%af%e5%be%84)
-  Arduino IDE（集成开发环境）生成HEX文件通常是在完成程序编写并上传到Arduino硬件的过程中发生的。默认路径配置在C:\\Users\\13797\\AppData\\Local\\arduino\\sketches（路径可能会因系统设置而异）中，以下是其编译输出目录结构
+Arduino IDE（集成开发环境）生成HEX文件通常是在完成程序编写并上传到Arduino硬件的过程中发生的。默认路径配置在C:\\Users\\13797\\AppData\\Local\\arduino\\sketches（路径可能会因系统设置而异）中，以下是其编译输出目录结构
 
 ```Plain Text
 C:\Users\13797\AppData\Local\arduino\sketches\随机ID
@@ -411,7 +401,7 @@ void LED::detach()
 和`led.cpp` 的源代码， examples中存放着`blink.ino` ，可以通过调用它实现点亮主板上自带的led灯的效果。
 
 ### [7.2 在Arduino上使用自己的库](https://docs.emakefun.com/#/zh-cn/software/arduino_ide/arduino_ide.zh-CN?id=_62-%e5%a6%82%e4%bd%95%e9%80%9a%e8%bf%87%e7%bc%96%e8%af%91%e9%94%99%e8%af%af%e5%ae%9a%e4%bd%8d%e8%a7%a3%e5%86%b3%e9%97%ae%e9%a2%98)
-  如果模块好用且经常使用，可将它变成自己的库文件，以便于将来的项目直接调用。
+如果模块好用且经常使用，可将它变成自己的库文件，以便于将来的项目直接调用。
 
 #####  7.2.1库的标准文件结构
   MyLibrary/                    # 库文件夹（库名）
